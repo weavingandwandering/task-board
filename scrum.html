@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>32-Bit: Scrum Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/scrum.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <script src="https://kit.fontawesome.com/36a93433f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top-navbar">
+        </div>
+        
+        <div class="main">
+            <h1>- Scrum Board -</h1>
+
+            <div class = "board">
+                <form id = "todo-form">
+                    <input type = "text" placeholder="Task to be Added..." id = "todo-input"/>
+                    <button type="submit">Add +</button>
+                </form> 
+
+                <div class = "lanes">
+                    <div class="swim-lane" id="todo-lane">
+                        <h3 class="heading">TO DO</h3>
+                        <!-- <p class="task" draggable="true">Task 1</p> -->
+                    </div>
+
+                    <div class="swim-lane" id="doing-lane">
+                        <h3 class="heading">DOING</h3>
+                        <!-- <p class="task" draggable="true">Task 2</p> -->
+                    </div>
+
+                    <div class="swim-lane" id="done-lane">
+                        <h3 class="heading">DONE</h3>
+                    </div> 
+
+                    <br>
+                </div>
+
+                <br>
+                <br>
+                <hr class = "bar">
+                <br>
+                <br>
+                
+                <div class = "swim-lane" id="scrap-lane">
+                    <h3 class="heading">SCRAP</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src = "js/scrum.js" defer></script>
+</html>
